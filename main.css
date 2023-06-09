@@ -1,1 +1,16 @@
-
+body{
+    background-color: rgb(198, 137, 255);
+}
+h1{
+    font-family: 'Times New Roman';
+    font-size: 40px;
+    color:white;
+    background-color: black;
+    width:100%;
+    text-align: center;
+}
+section{
+    background-color: rgb(182, 104, 255);
+    text-align: center;
+    width:70%;
+}
