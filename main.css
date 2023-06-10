@@ -36,3 +36,9 @@ div{
     border-width: 3px;
     border-color: black;
 }
+div:hover{
+    background-color: rgb(195, 133, 253);
+}
+a{
+    text-decoration: none;
+}
