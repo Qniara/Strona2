@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(198, 137, 255);
+}
+h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    color:white;
+    background-color: black;
+    width:100%;
+    text-align: center;
+}
+div{
+    background-color: rgb(182, 104, 255);
+    width:95%;
+    margin:0 auto;
+    border-style: solid;
+    height: 800px;
+    border-width: 3px;
+    border-color: black;
+    display:inline-block
+}
+div:hover{
+    background-color: rgb(195, 133, 253);
+    
+}
+h2{
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    color:rgb(0, 0, 0);
+    width:100%;
+    text-align: center;
+    font-style: italic;
+}
+h3{
+    font-family: 'Cambria';
+    font-size: 15px;
+    color:rgb(0, 0, 0);
+    width:85%;
+    margin:5%;
+}
+table{
+    width:100%;
+    table-layout: fixed;
+}
+img{
+    width:60%;
+    border-radius: 10%;
+    border-color: black;
+    border-width: 3px;
+}
+input{
+    font-size:25px;
+    width:30%;
+    background-color: rgb(142, 116, 166);
+}
