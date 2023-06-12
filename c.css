@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(198, 137, 255);
+    background-color: rgb(139, 139, 139);
 }
 h1{
     font-family: 'Times New Roman';
@@ -30,7 +30,7 @@ h4{
     display:inline-block;
 }
 div{
-    background-color: rgb(182, 104, 255);
+    background-color: rgb(165, 95, 255);
     margin: 0 auto;
     width:80%;
     height: 40%;
@@ -48,4 +48,9 @@ textarea{
 .custom-button{
     font-size: 25px;
     background-color: rgb(195, 136, 250);
+}
+.button{
+    font-size:25px;
+    width:30%;
+    background-color: rgb(142, 116, 166);
 }
