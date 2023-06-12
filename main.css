@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(198, 137, 255);
+    background-color: rgb(139, 139, 139);
 }
 h1{
     font-family: 'Times New Roman';
@@ -43,7 +43,7 @@ h5{
     text-align: center;
 }
 div{
-    background-color: rgb(182, 104, 255);
+    background-color: rgb(165, 95, 255);
     margin: 0 auto;
     width:80%;
     height: 40%;
@@ -52,26 +52,27 @@ div{
     border-color: black;
 }
 div:hover{
-    background-color: rgb(195, 133, 253);
+    background-color: rgb(191, 142, 255);
 }
 a{
     text-decoration: none;
 }
 section{
-    background-color: rgb(182, 104, 255);
+    background-color: rgb(165, 95, 255);
     width:95%;
     margin:0 auto;
     border-style: solid;
-    height: 400px;
+    height: 450px;
     border-width: 3px;
     border-color: black;
     display:inline-block
 }
 section:hover{
-    background-color: rgb(195, 133, 253);
+    background-color: rgb(191, 142, 255);
 }
 table{
     width:80%;
+    height: 400px;
     table-layout: fixed;
     margin:0 auto;
 }
