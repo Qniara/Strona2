@@ -1,47 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script>
+        function saveFormValues() {
+          var inputs = document.getElementsByTagName("input");
+          for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].type === "text") {
+              localStorage.setItem(inputs[i].name, inputs[i].value);
+            }
+          }
+        }
+        function restoreFormValues() {
+          var inputs = document.getElementsByTagName("input");
+          for (var i = 0; i < inputs.length; i++) {
+            if (inputs[i].type === "text") {
+              var storedValue = localStorage.getItem(inputs[i].name);
+              if (storedValue !== null) {
+                inputs[i].value = storedValue;
+              }
+            }
+          }
+        }
+      </script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sprzedaż i kupno koni</title>
-    <link rel="stylesheet" href="c.css">
+    <link rel="stylesheet" href="a.css">
 </head>
 <body>
     <h1>Sprzedaż i kupno koni</h1>
-    <a href="a.html"><input type="button" value="Powrót"></a><br>
-    <div class="main">
-        <h2>Formularz</h2>
-        <h3>Wpisz dane swoje dane aby dokonać zakupu</h3>
-        <form>
-            <label for="pole-tekstowe">Imie:</label>
-            <input type="text" id="pole-tekstowe" name="pole-tekstowe">
-            <br>
-            <label for="pole-tekstowe">Nazwisko:</label>
-            <input type="text" id="pole-tekstowe" name="pole-tekstowe">
-            <br>
-            <label for="pole-tekstowe">Data urodzenia:</label>
-            <input type="text" id="pole-tekstowe" name="pole-tekstowe">
-            <br>
-            <label for="pole-tekstowe">Adres:</label>
-            <input type="text" id="pole-tekstowe" name="pole-tekstowe">
-            <br>
-            <label for="pole-tekstowe">Numer telefonu:</label>
-            <input type="text" id="pole-tekstowe" name="pole-tekstowe">
-            <br>
-            <label for="pole-tekstowe">E-mail:</label>
-            <input type="text" id="pole-tekstowe" name="pole-tekstowe">
-            <br>
-            <label for="pole-tekstowe">Wybierz forme płatności:</label><br>
-            <input type="radio" id="pole-tekstowe" name="radio">
-            <label for="pole-tekstowe">Przelew</label><br>
-            <input type="radio" id="pole-tekstowe" name="radio">
-            <label for="pole-tekstowe">Blik</label><br>
-            <input type="radio" id="pole-tekstowe" name="radio">
-            <label for="pole-tekstowe">Paypal</label><br>
-            <br><br>
-            <center><input type="submit" value="Kup" class="custom-button"></center>
-        </form>
-    </div>
+    <a href="main.html"><input type="button" value="Powrót do strony głównej"></a><br>
+    <table>
+        <tr>
+            <td>
+                <div class="a">
+                    <h2>Apollo (Finston de Bo Z/ Australien)</h2>
+                    <center><img src="1.jpg"></center>
+                        <h3>Data urodzenia: 2022<br>
+                            Rasa: Deutsches Sportpferd<br>
+                            Maść: Kasztanowata<br>
+                            Płeć: Ogier<br>
+                            Imię Matki: Australien<br>
+                            Imię Ojca: Finston de Bo Z<br>
+                            Cena: 28000 zł<br>
+                            Opis:<br>
+                            Na sprzedaż niezwykle urodziwy ogierek po ogierze Finston De Bo Z
+                            Kasztanowaty w nowoczesnym typie sportowym ogier Finston De Bo Z to syn sprawdzonego w konkursach 160 cm ogiera Flipper d` Elle (Double 
+                            Espoir x Jalisco B), ogier uznawany w Zangersheide i AES. Finston de Bo Z osiągnął czołowe lokaty w konkursach dla koni 4 letnich w roku 
+                            2020.W roku 2021 z powodzeniem startował w zawodach międzynarodowych zdobywając II m-sce w finale koni 5 - letnich Vejer de La Frontera.
+                            Matką młodego ogierka Apollo jest klacz Australien (niemiecki koń sportowy) po holsztyńskim ogierze ACONCERTO i hanowerskiej klaczy Rubina.
+                            Ostatnie zdjęcie przedstawia ojca Finston de Bo Z. 
+                        </h3>
+                        <center><a href="c.html"><input type="button" value="Kup"></a></center>
+                </div>
+            </td>
+            <td>
+                <div class="b">
+                    <h2>Nutella (Bijou Be x Alcatraz)</h2>
+                    <center><img src="2.jpg"></center>
+                    <h3>Data urodzenia: <br>
+                        Rasa: Szlachetna Półkrew<br>
+                        Maść: Kasztanowata<br>
+                        Płeć: Klacz<br>
+                        Wzrost: 173 cm<br>
+                        Imię Matki: Nexica<br>
+                        Imię Ojca: Biju Be<br>
+                        Cena: 100-200 tys. zł<br>
+                        Opis:<br>
+                        5 letnia kobyłka po ogierze Bijou Be/Balou du Rouet od matki Nexica/Alcatraz. Koń łatwy w obsłudze i we współpracy. 
+                        Startuje konkursy na poziomie P klasy. Zarówna matka jak i ojciec skakali na poziomie GP w Polsce. Kobyłka 
+                        wyhodowana w Polsce. Mierzy około 173cm. Dostępny TUV dla zainteresowanych. Skoki luzem: 
+                        https://youtu.be/8nbveqg42ls
+                    </h3>
+                    <center><a href="c.html"><input type="button" value="Kup"></a></center>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="c">
+                    <h2>Arcadina po Cardino / Carthago Z</h2>
+                    <center><img src="3.jpg"></center>
+                    <h3>Data urodzenia: 2018<br>
+                        Rasa: Wielkopolska<br>
+                        Maść: Siwa Jabłókowita<br>
+                        Płeć: Klacz<br>
+                        Wzrost: 168 cm<br>
+                        Imię Matki: Argentyna<br>
+                        Imię Ojca: Cardino<br>
+                        Cena: 75000 zł<br>
+                        Opis:<br>
+                        Klacz jest bardzo dobrze ujeżdżona , obecnie startuje w zawodach do klasiy L (100cm). W treningu skakała z jeźdźcem do 115cm z racji wieku. W 
+                        korytarzu do 140. Koń z predyspozycjami na wyższe klasy/konkursy w przyszłości. Startowała na parkurach zewnetrznych jak i w hali. Klacz ma cudowny 
+                        charakter - bardzo opanowana, odważna, ufna, chetnie wykonuje nowe zadania i szybko się uczy, cena będzie stopniowo rosła wraz ze wzrostem 
+                        umiejętności i wysokości konkursów w których startuje. Pod siodlem jest “do przodu”. Nie odmawia skoku- atakuje przeszkody, co w przypadku 
+                        nowoczesnego konia sportowego jest podstawową i najważniejszą cechą, lubi skakać i jest bardzo odważna. 
+                    </h3>
+                    <center><a href="c.html"><input type="button" value="Kup"></a></center>
+                </div>
+            </td>
+            <td>
+                <div class="d">
+                    <h2>Kuc C grupowy do sportu</h2>
+                    <center><img src="4.jpg"></center>
+                    <h3>Data urodzenia: 2011<br>
+                        Rasa: NN<br>
+                        Maść: Kasztanowata<br>
+                        Płeć: Klacz<br>
+                        Wzrost: 140 cm<br>
+                        Imię Matki: Sonia<br>
+                        Imię Ojca: Emigrant<br>
+                        Cena: 30-40 tys. zł<br>
+                        Opis:<br>
+                        Sissi posiada kilkuletnie doświadczenie na zawodach ogólnopolskich Dzieci i Młodzieży, gdzie z sukcesami kończy finały C grupy, również te na 
+                        poziomie mistrzowskim.
+                        Jest kucykiem mocno idącym do przodu, odważnym – nie straszne jej rowy, deski, podmurówki – zawsze chce być po drugiej stronie. Będzie idealna 
+                        na konkursy ścigane - w A2 na pewno powalczy o najwyższe miejsca, a docelowo wprowadzi jeźdźca w wysokości C grupy.
+                        Nie jest jednak koniem dla początkującego, wymaga dziecka ze stabilną ręką i dosiadem. 
+                    </h3>
+                    <center><a href="c.html"><input type="button" value="Kup"></a></center>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="e">
+                    <h2>Wiwerna</h2>
+                    <center><img src="5.jpg"></center>
+                    <h3>Data urodzenia: 2022<br>
+                        Rasa: Czysta Krew Arabska<br>
+                        Maść: Kasztanowata<br>
+                        Płeć: Klacz<br>
+                        Imię Matki: Wielka Nadzieja<br>
+                        Imię Ojca: Ekret<br>
+                        Cena: 13000 zł<br>
+                        Opis:<br>
+                        Na sprzedaż bardzo grzeczna roczna klacz, nauczona podawania nóg i prowadzenia, codziennie padokowana.
+                        Data urodzenia: 12.06.2022.
+                        Matka: Wielka Nadzieja (Emberk x Wielka Nowian /Wachlarz)
+                        Ojciec: Ekert (Pilot x Ekumena/Gazal Al Shaqab) 
+                    </h3>
+                    <center><a href="c.html"><input type="button" value="Kup"></a></center>
+                </div>
+            </td>
+            <td>
+                <div class="f">
+                    <h2>Ogier pełnej krwi angielskiej Dab Dancer</h2>
+                    <center><img src="6.jpg"></center>
+                    <h3>Data urodzenia: <br>
+                        Rasa: Pełna krew angielska<br>
+                        Maść: Gniada<br>
+                        Płeć: Ogier<br>
+                        Wzrost: 165 cm<br>
+                        Imię Matki: Santa Christiana<br>
+                        Imię Ojca: Dabirsim<br>
+                        Cena: 27000 zł<br>
+                        Opis:<br>
+                        Na sprzedaż trzyletni ogier pełnej krwi angielskiej DAB DANCER (Dabirsim-Santa Chrostiana/Danehill Dancer) będący w treningu wyścigowym u 
+                        trenera Krzysztofa Ziemiańskiego. Koń został zakupiony we Francji na aukcji Arqany w 2021 roku za cenę 6 500 euro. Do tej pory startował 
+                        pięciokrotnie i za każdym razem zajmował płatne miejsca. Jako dwulatek był: trzeci, czwarty i pierwszy. Jako trzylatek: trzeci (I gr – Memoriał 
+                        Dula) oraz czwarty. Kolejny start ma zaplanowany na przełomie czerwca i lipca. Najlepiej czuje się na dystansach około mili.
+                    </h3>
+                    <center><a href="c.html"><input type="button" value="Kup"></a></center>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <h2>Profesor do skoków</h2>
+                    <center><img src="7.jpg"></center>
+                    <h3>Data urodzenia: 2012<br>
+                        Rasa: Deutsches Sportpferd<br>
+                        Maść: Gniada<br>
+                        Płeć: <br>
+                        Wzrost: 176 cm<br>
+                        Imię Matki: Cindy/ Tenerife VDL<br>
+                        Imię Ojca:  Nabab de Reve<br>
+                        Cena: 125000 zł<br>
+                        Opis:<br>
+                        Michigen Van de Mizerik to 11 letni wałach wyhodowany w Belgii, po ogierze Nabab de Reve. Jest koniem pokaźnych gabarytów, mierzący 176 cm, o 
+                        dobrych proporcjach, poprawnej budowie oraz dobrych kopytach, ładnym eksterierze i eleganckim ruchu. Jest to koń z bardzo łagodnym usposobieniem 
+                        i dobrą głową. Nie jest płochliwy patrzący lub brykający. Lubi kontakt z ludzi oraz dobrze dogaduje się z innymi końmi. Nie sprawia najmniejszych 
+                        problemów w obejściu, zabiegach czy transporcie. Spełni się w roli konia profesora, ponieważ, ma za sobą udane starty w zawodach do 140 cm. 
+                    </h3>
+                    <center><a href="c.html"><input type="button" value="Kup"></a></center>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <h2>Koń profesor ujeżdżeniowy</h2>
+                    <center><img src="8.jpg"></center>
+                    <h3>Data urodzenia: 2008<br>
+                        Rasa:  Deutsches Sportpferd<br>
+                        Maść: Gniada<br>
+                        Płeć: Wałach<br>
+                        Wzrost: 167 cm<br>
+                        Imię Matki: SDR BJERGGAARDS PIERETTE<br>
+                        Imię Ojca: KAISER WILHELM<br>
+                        Cena: 105000 zł<br>
+                        Opis:<br>
+                        Na sprzedaż wałach ujeżdżeniowy przygotowany do klasy C z elementami CC (zaczął się uczyć półpiruetów, robi lotne zmiany w seriach co 5/4/3/2). 
+                        Z uwagi na zrównoważony charakter i poziom wyszkolenia koń świetnie nadaje się dla juniora. Koń bardzo łatwy i przyjemny w jeżdżeniu. Również 
+                        jest bardzo grzeczny: na zawodach, w terenach, przy kowalu i goleniu, siodłany bez przywiązania. 
+                    </h3>
+                    <center><a href="c.html"><input type="button" value="Kup"></a></center>
+                </div>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>
